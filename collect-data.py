@@ -38,8 +38,17 @@ while True:
     
     # Getting count of existing images
     count = {
-            'अ':len(os.listdir(directory+"/अ")),
-            'आ': len(os.listdir(directory+"/आ")),
+            '१':len(os.listdir(directory+"/१")),
+            '२':len(os.listdir(directory+"/२")),
+            '३':len(os.listdir(directory+"/३")),
+            '४':len(os.listdir(directory+"/४")),
+            '५':len(os.listdir(directory+"/५")),
+            '६':len(os.listdir(directory+"/६")),
+            '७':len(os.listdir(directory+"/७")),
+            '८':len(os.listdir(directory+"/८")),
+            '९':len(os.listdir(directory+"/९")),
+            '०':len(os.listdir(directory+"/०")),
+            ''''आ': len(os.listdir(directory+"/आ")),
             'इ': len(os.listdir(directory+"/इ")),
             'ई': len(os.listdir(directory+"/ई")),
             'उ': len(os.listdir(directory+"/उ")),
@@ -50,7 +59,7 @@ while True:
             'ओ': len(os.listdir(directory+"/ओ")),
             'औ': len(os.listdir(directory+"/औ")),
             'अं': len(os.listdir(directory+"/अं")),
-            'अः': len(os.listdir(directory+"/अः")),
+            'अः': len(os.listdir(directory+"/अः")),'''
              'क': len(os.listdir(directory+"/क")),
              'ख': len(os.listdir(directory+"/ख")),
              'ग': len(os.listdir(directory+"/ग")),
@@ -90,40 +99,54 @@ while True:
              }
     
     # Printing the count in each set to the screen
-    # cv2.putText(frame, "MODE : "+mode, (10, 50), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    # cv2.putText(frame, "IMAGE COUNT", (10, ), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "ZERO : "+str(count['zero']), (10, 70), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "ONE : "+str(count['one']), (10, 80), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "TWO : "+str(count['two']), (10, 90), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    # cv2.putText(frame, "THREE : "+str(count['three']), (10, 180), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    # cv2.putText(frame, "FOUR : "+str(count['four']), (10, 200), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    # cv2.putText(frame, "FIVE : "+str(count['five']), (10, 220), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    # cv2.putText(frame, "SIX : "+str(count['six']), (10, 230), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "a : "+str(count['a']), (10, 100), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "b : "+str(count['b']), (10, 110), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "c : "+str(count['c']), (10, 120), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "d : "+str(count['d']), (10, 130), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "e : "+str(count['e']), (10, 140), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "f : "+str(count['f']), (10, 150), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "g : "+str(count['g']), (10, 160), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "h : "+str(count['h']), (10, 170), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "i : "+str(count['i']), (10, 180), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "k : "+str(count['k']), (10, 190), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "l : "+str(count['l']), (10, 200), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "m : "+str(count['m']), (10, 210), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "n : "+str(count['n']), (10, 220), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "o : "+str(count['o']), (10, 230), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "p : "+str(count['p']), (10, 240), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "q : "+str(count['q']), (10, 250), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "r : "+str(count['r']), (10, 260), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "s : "+str(count['s']), (10, 270), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "t : "+str(count['t']), (10, 280), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "u : "+str(count['u']), (10, 290), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "v : "+str(count['v']), (10, 300), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "w : "+str(count['w']), (10, 310), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "x : "+str(count['x']), (10, 320), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "y : "+str(count['y']), (10, 330), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
-    cv2.putText(frame, "z : "+str(count['z']), (10, 340), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "० : "+str(count['०']), (10, 70), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "१ : "+str(count['१']), (10, 80), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "२ : "+str(count['२']), (10, 90), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "३ : "+str(count['३']), (10, 100), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "४ : "+str(count['४']), (10, 110), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "५ : "+str(count['५']), (10, 120), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "६ : "+str(count['६']), (10, 130), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "७ : "+str(count['७']), (10, 140), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "८ : "+str(count['८']), (10, 150), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "९ : "+str(count['९']), (10, 160), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "क : "+str(count['क']), (10, 170), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "ख : "+str(count['ख']), (10, 180), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "ग : "+str(count['ग']), (10, 190), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "घ : "+str(count['घ']), (10, 200), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "ङ : "+str(count['ङ']), (10, 210), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "च : "+str(count['च']), (10, 220), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "छ : "+str(count['छ']), (10, 230), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "ज : "+str(count['ज']), (10, 240), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "झ : "+str(count['झ']), (10, 250), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "ञ : "+str(count['ञ']), (10, 260), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "ट : "+str(count['ट']), (10, 270), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "ठ : "+str(count['ठ']), (10, 280), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "ड : "+str(count['ड']), (10, 290), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "ढ : "+str(count['ढ']), (10, 300), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "ण : "+str(count['ण']), (10, 310), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "त : "+str(count['त']), (10, 320), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "थ : "+str(count['थ']), (10, 330), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "द : "+str(count['द']), (10, 340), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "ध : "+str(count['ध']), (10, 350), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "न : "+str(count['न']), (10, 360), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "प : "+str(count['प']), (10, 370), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "फ : "+str(count['फ']), (10, 380), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "ब : "+str(count['ब']), (10, 390), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "भ : "+str(count['भ']), (10, 400), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "म : "+str(count['म']), (10, 410), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "य : "+str(count['य']), (10, 420), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "र : "+str(count['र']), (10, 430), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "ल : "+str(count['ल']), (10, 440), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "व : "+str(count['व']), (10, 450), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "श : "+str(count['श']), (10, 460), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "ष : "+str(count['ष']), (10, 470), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "स : "+str(count['स']), (10, 480), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "ह : "+str(count['ह']), (10, 490), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "क्ष : "+str(count['क्ष']), (10, 500), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "त्र : "+str(count['त्र']), (10, 510), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+    cv2.putText(frame, "ज्ञ : "+str(count['ज्ञ']), (10, 520), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
+
+
     # Coordinates of the ROI
     x1 = int(0.5*frame.shape[1])
     y1 = 10
@@ -174,73 +197,98 @@ while True:
     interrupt = cv2.waitKey(10)
     if interrupt & 0xFF == 27: # esc key
         break
-    if interrupt & 0xFF == ord('0'):
-        cv2.imwrite(directory+'0/'+str(count['zero'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('1'):
-        cv2.imwrite(directory+'1/'+str(count['one'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('2'):
-        cv2.imwrite(directory+'2/'+str(count['two'])+'.jpg', roi)       
-    # if interrupt & 0xFF == ord('3'):
-    #     cv2.imwrite(directory+'3/'+str(count['three'])+'.jpg', roi)
-    # if interrupt & 0xFF == ord('4'):
-    #     cv2.imwrite(directory+'4/'+str(count['four'])+'.jpg', roi)
-    # if interrupt & 0xFF == ord('5'):
-    #     cv2.imwrite(directory+'5/'+str(count['five'])+'.jpg', roi)
-    # if interrupt & 0xFF == ord('6'):
-    #     cv2.imwrite(directory+'6/'+str(count['six'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('a'):
-        cv2.imwrite(directory+'A/'+str(count['a'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('b'):
-        cv2.imwrite(directory+'B/'+str(count['b'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('c'):
-        cv2.imwrite(directory+'C/'+str(count['c'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('d'):
-        cv2.imwrite(directory+'D/'+str(count['d'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('e'):
-        cv2.imwrite(directory+'E/'+str(count['e'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('f'):
-        cv2.imwrite(directory+'F/'+str(count['f'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('g'):
-        cv2.imwrite(directory+'G/'+str(count['g'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('h'):
-        cv2.imwrite(directory+'H/'+str(count['h'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('i'):
-        cv2.imwrite(directory+'I/'+str(count['i'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('j'):
-        cv2.imwrite(directory+'J/'+str(count['j'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('k'):
-        cv2.imwrite(directory+'K/'+str(count['k'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('l'):
-        cv2.imwrite(directory+'L/'+str(count['l'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('m'):
-        cv2.imwrite(directory+'M/'+str(count['m'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('n'):
-        cv2.imwrite(directory+'N/'+str(count['n'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('o'):
-        cv2.imwrite(directory+'O/'+str(count['o'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('p'):
-        cv2.imwrite(directory+'P/'+str(count['p'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('q'):
-        cv2.imwrite(directory+'Q/'+str(count['q'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('r'):
-        cv2.imwrite(directory+'R/'+str(count['r'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('s'):
-        cv2.imwrite(directory+'S/'+str(count['s'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('t'):
-        cv2.imwrite(directory+'T/'+str(count['t'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('u'):
-        cv2.imwrite(directory+'U/'+str(count['u'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('v'):
-        cv2.imwrite(directory+'V/'+str(count['v'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('w'):
-        cv2.imwrite(directory+'W/'+str(count['w'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('x'):
-        cv2.imwrite(directory+'X/'+str(count['x'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('y'):
-        cv2.imwrite(directory+'Y/'+str(count['y'])+'.jpg', roi)
-    if interrupt & 0xFF == ord('z'):
-        cv2.imwrite(directory+'Z/'+str(count['z'])+'.jpg', roi)        
-    
+    if interrupt & 0xFF == ord('०'):
+        cv2.imwrite(directory+'०/'+str(count['०'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('१'):
+        cv2.imwrite(directory+'१/'+str(count['१'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('२'):
+        cv2.imwrite(directory+'२/'+str(count['२'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('३'):
+        cv2.imwrite(directory+'३/'+str(count['३'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('४'):
+        cv2.imwrite(directory+'४/'+str(count['४'])+'.jpg', roi) 
+    if interrupt & 0xFF == ord('५'):
+        cv2.imwrite(directory+'५/'+str(count['५'])+'.jpg', roi) 
+    if interrupt & 0xFF == ord('६'):
+        cv2.imwrite(directory+'६/'+str(count['६'])+'.jpg', roi) 
+    if interrupt & 0xFF == ord('७'):
+        cv2.imwrite(directory+'७/'+str(count['७'])+'.jpg', roi) 
+    if interrupt & 0xFF == ord('८'):
+        cv2.imwrite(directory+'८/'+str(count['८'])+'.jpg', roi) 
+    if interrupt & 0xFF == ord('९'):
+        cv2.imwrite(directory+'९/'+str(count['९'])+'.jpg', roi) 
+    if interrupt & 0xFF == ord('क'):
+        cv2.imwrite(directory+'क/'+str(count['क'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('ख'):
+        cv2.imwrite(directory+'ख/'+str(count['ख'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('ग'):
+        cv2.imwrite(directory+'ग/'+str(count['ग'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('घ'):
+        cv2.imwrite(directory+'घ/'+str(count['घ'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('ङ'):
+        cv2.imwrite(directory+'ङ/'+str(count['ङ'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('च'):
+        cv2.imwrite(directory+'च/'+str(count['च'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('छ'):
+        cv2.imwrite(directory+'छ/'+str(count['छ'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('ज'):
+        cv2.imwrite(directory+'ज/'+str(count['ज'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('झ'):
+        cv2.imwrite(directory+'झ/'+str(count['झ'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('ञ'):
+        cv2.imwrite(directory+'ञ/'+str(count['ञ'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('ट'):
+        cv2.imwrite(directory+'ट/'+str(count['ट'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('ठ'):
+        cv2.imwrite(directory+'ठ/'+str(count['ठ'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('ड'):
+        cv2.imwrite(directory+'ड/'+str(count['ड'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('ढ'):
+        cv2.imwrite(directory+'ढ/'+str(count['ढ'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('ण'):
+        cv2.imwrite(directory+'ण/'+str(count['ण'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('त'):
+        cv2.imwrite(directory+'त/'+str(count['त'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('थ'):
+        cv2.imwrite(directory+'थ/'+str(count['थ'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('द'):
+        cv2.imwrite(directory+'द/'+str(count['द'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('ध'):
+        cv2.imwrite(directory+'ध/'+str(count['ध'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('न'):
+        cv2.imwrite(directory+'न/'+str(count['न'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('प'):
+        cv2.imwrite(directory+'प/'+str(count['प'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('फ'):
+        cv2.imwrite(directory+'फ/'+str(count['फ'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('ब'):
+        cv2.imwrite(directory+'ब/'+str(count['ब'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('भ'):
+        cv2.imwrite(directory+'भ/'+str(count['भ'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('म'):
+        cv2.imwrite(directory+'म/'+str(count['म'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('य'):
+        cv2.imwrite(directory+'य/'+str(count['य'])+'.jpg', roi)        
+    if interrupt & 0xFF == ord('र'):
+        cv2.imwrite(directory+'र/'+str(count['र'])+'.jpg', roi)        
+    if interrupt & 0xFF == ord('ल'):
+        cv2.imwrite(directory+'ल/'+str(count['ल'])+'.jpg', roi)        
+    if interrupt & 0xFF == ord('व'):
+        cv2.imwrite(directory+'व/'+str(count['व'])+'.jpg', roi)        
+    if interrupt & 0xFF == ord('श'):
+        cv2.imwrite(directory+'श/'+str(count['श'])+'.jpg', roi)        
+    if interrupt & 0xFF == ord('ष'):
+        cv2.imwrite(directory+'ष/'+str(count['ह'])+'.jpg', roi)        
+    if interrupt & 0xFF == ord('स'):
+        cv2.imwrite(directory+'स/'+str(count['स'])+'.jpg', roi)        
+    if interrupt & 0xFF == ord('ह'):
+        cv2.imwrite(directory+'ह/'+str(count['ह'])+'.jpg', roi)        
+    if interrupt & 0xFF == ord('क्ष'):
+        cv2.imwrite(directory+'क्ष/'+str(count['क्ष'])+'.jpg', roi)        
+    if interrupt & 0xFF == ord('त्र'):
+        cv2.imwrite(directory+'त्र/'+str(count['त्र'])+'.jpg', roi)
+    if interrupt & 0xFF == ord('ज्ञ'):
+        cv2.imwrite(directory+'ज्ञ/'+str(count['ज्ञ'])+'.jpg', roi) 
 cap.release()
 cv2.destroyAllWindows()
 """
