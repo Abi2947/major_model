@@ -1,3 +1,4 @@
+#pip install opencv-contrib-python
 import cv2 as cv
 cam = cv.VideoCapture(0)
 cc = cv.VideoWriter_fourcc(*'mp4v')
