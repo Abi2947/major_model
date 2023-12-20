@@ -1,8 +1,8 @@
 #pip install opencv-contrib-python
 import cv2 as cv
-cam = cv.VideoCapture(0)
+cam = cv.VideoCapture(0)#for linux user put the value to 1 instead of 0
 cc = cv.VideoWriter_fourcc(*'mp4v')
-file = cv.VideoWriter('output.mp4', cc, 15.0, (640, 480))
+file = cv.VideoWriter('dataset/Training/output.mp4', cc, 15.0, (640, 480))
 if not cam.isOpened():
    print("error opening camera")
    exit()

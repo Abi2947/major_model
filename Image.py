@@ -1,8 +1,10 @@
 import cv2
 import os
 
-cam = cv2.VideoCapture("output.mp4")
+cam = cv2.VideoCapture("dataset/Training/output.mp4")
 
+d_path=r'D:\Major Project\dataset\Training'
+os.chdir(d_path)
 frameno = 0
 while(True):
    ret,frame = cam.read()
