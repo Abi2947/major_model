@@ -1,6 +1,7 @@
 #pip install opencv-contrib-python
+import os
 import cv2 as cv
-cam = cv.VideoCapture(0)
+cam = cv.VideoCapture(1)
 cc = cv.VideoWriter_fourcc(*'mp4v')
 file = cv.VideoWriter('output.mp4', cc, 15.0, (640, 480))
 if not cam.isOpened():
@@ -18,7 +19,6 @@ while True:
    cv.imshow('frame', img)
    file.write(img)
 
-   
    if cv.waitKey(1) == ord('q'):
       break
 
