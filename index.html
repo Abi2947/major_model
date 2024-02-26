@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Sign Recognition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f6;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #video-container {
+            margin-top: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        #video-feed {
+            width: 100%;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hand Sign Recognition</h1>
+        <div id="video-container">
+            <img id="video-feed" src="" alt="Camera Feed">
+        </div>
+        <button class="btn" id="start-btn">Start Camera</button>
+        <button class="btn hidden" id="stop-btn">Stop Camera</button>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const videoFeed = document.getElementById("video-feed");
+            const startBtn = document.getElementById("start-btn");
+            const stopBtn = document.getElementById("stop-btn");
+
+            let isCameraOn = false;
+
+            startBtn.addEventListener("click", function() {
+                if (!isCameraOn) {
+                    videoFeed.src = "{{ url_for('camera_feed') }}";
+                    isCameraOn = true;
+                    startBtn.classList.add("hidden");
+                    stopBtn.classList.remove("hidden");
+                }
+            });
+
+            stopBtn.addEventListener("click", function() {
+                if (isCameraOn) {
+                    videoFeed.src = "";
+                    isCameraOn = false;
+                    stopBtn.classList.add("hidden");
+                    startBtn.classList.remove("hidden");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
